@@ -52,9 +52,14 @@ class App extends React.Component {
         <div className="card-container">
           <div className="create-btn-wrap">
             { !this.state.showNewForm &&
-              <a onClick={() => this.toggleNewForm()}>
-                 Dashboard
-              </a>
+                <div>
+                  <a onClick={() => this.toggleNewForm()}>
+                    Notiications
+                  </a>
+                  <a onClick={() => this.toggleNewForm()}>
+                    Dashboard
+                  </a>
+                </div>
             }
 
             { this.state.showNewForm &&
